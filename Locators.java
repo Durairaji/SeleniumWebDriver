@@ -19,7 +19,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Locators {
-
 	public static void main(String[] args) throws InterruptedException  {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\DURAIRAJ\\eclipse-workspace\\lib\\driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -39,11 +38,7 @@ public class Locators {
 			System.out.println(webElement2.getText());
 			
 		}
-		
-		
-		
-		
+			
 	driver.quit();
 	}
-
 }
