@@ -3,9 +3,16 @@
 <suite name="Suite">
 <parameter name="email" value="9789948938"></parameter>
 <parameter name="pass" value="passwork##"></parameter>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="chrometest">
+  <parameter name="browser" value="Chrome"></parameter>
     <classes>
       <class name="ThreadExecution.Parameters"/>
     </classes>
-  </test> <!-- Test -->
+  </test>  
+  <test thread-count="5" name="FoxTest">
+  <parameter name="browser"value="Firefox"><parameter>
+    <classes>
+      <class name="ThreadExecution.Parameters"/>
+    </classes>
+  </test> 									<!-- Test -->
 </suite> <!-- Suite -->
