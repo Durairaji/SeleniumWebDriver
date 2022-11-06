@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="dataproviderr.Parent"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="BothInCorrect">
+		<parameter name="username" value="sdureairaj"> </parameter>
+		<parameter name="password" value="password##"> </parameter>
+		<classes>
+			<class name="datadriven.BothInCorrect" />
+		</classes>
+	</test>
+	<test thread-count="5" name="BothCorrect">
+		<parameter name="username" value="sduraira2j"> </parameter>
+		<parameter name="password" value="passsword##"> </parameter>
+
+		<classes>
+			<class name="datadriven.BothCorrect" />
+		</classes>
+	</test>
+	<test thread-count="5" name="CorrectAndInCorrect">
+		<parameter name="username" value="sdurairaj"> </parameter>
+		<parameter name="password" value="password##"> </parameter>
+
+		<classes>
+			<class name="datadriven.CorrectAndInCorrect" />
+
+		</classes>
+	</test>
+	<test thread-count="5" name="InCorrectAndCorrect">
+	<parameter name="username" value="sdurairaj"> </parameter>
+			<parameter name="password" value="password##"> </parameter>
+	
+		<classes>	
+			<class name="datadriven.InCorrectAndCorrect" />
+
+		</classes>
+	</test>
+
+	<!-- Test -->
 </suite> <!-- Suite -->
