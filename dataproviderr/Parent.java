@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class Parent extends Child{
+public class Child extends parent{
 	@Test(dataProvider = "login")
 
 	public void logIn(String data[]) {
