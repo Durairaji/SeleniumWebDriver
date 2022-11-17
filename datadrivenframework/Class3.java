@@ -28,7 +28,5 @@ public class Class3 extends Class2
 		String title = driver.getTitle();
 		System.out.println(title);
 		driver.quit();
-
 	}
-
 }
