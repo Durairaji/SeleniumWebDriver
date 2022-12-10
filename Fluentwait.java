@@ -18,7 +18,8 @@ public class Fluentwait {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.findElement(By.xpath("//a[text()='Create New Account']")).click();;
-		Wait<WebDriver>wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(2)).ignoring(Exception.class);
+		Wait<WebDriver>wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(2)).ignoring(Exception.class);
 	WebElement until=wait.until(new Function<WebDriver, WebElement>() {
 
 			@Override
