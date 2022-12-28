@@ -19,6 +19,7 @@ public class TC002 extends PagesBase {
 		type(element(Locators.id,"username"),"Theanraj");
 		type(element(Locators.id,"password"),"Theanraj@123");
 		click(element(Locators.id,"login"));
+		
 //		LoginPages lp=new LoginPages();
 //		lp.enterUserName(data[0]);
 //		lp.enterPassword(data[1]);
